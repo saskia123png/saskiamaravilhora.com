@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saskia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff69b4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffc0cb;
+      flex-wrap: wrap;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      padding: 15px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav button:hover,
+    nav button.active {
+      background-color: #ffb6c1;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .foto-perfil {
+      max-width: 400px;
+      border-radius: 10px;
+      display: block;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💖 Saskia lindona 💖</h1>
+  </header>
+
+  <nav>
+    <button class="tab-button active" onclick="showTab('inicio')">Início</button>
+    <button class="tab-button" onclick="showTab('sobre')">Sobre Mim</button>
+    <button class="tab-button" onclick="showTab('amizade')">Como é bom ser meu amigo...</button>
+    <button class="tab-button" onclick="showTab('beleza')">Beleza</button>
+    <button class="tab-button" onclick="showTab('parente')">Sobre ser meu parente...</button>
+  </nav>
+
+  <div class="content">
+
+    <!-- Início -->
+    <div id="inicio" class="tab-content">
+      <h2>Saskia Samia🥰</h2>
+      <img src="saskia.jpg" alt="Minha Foto" class="foto-perfil"/>
+      <p>
+        Ser meu amigo é simplesmente incrível!<br>
+        Eu sou bonita, divertida, legal e sempre estou de bom humor 😊.<br>
+        Ter a minha amizade é ter alguém leal, carinhosa e que topa tudo!
+      </p>
+    </div>
+
+    <!-- Sobre Mim -->
+    <div id="sobre" class="tab-content hidden">
+      <h2>Coisas que eu adoro fazer 💖</h2>
+      <ul>
+        <li>🍫 Comer chocolate (meu favorito é bis de oreo)</li>
+        <li>💅 Pintar as unhas com cores lindas</li>
+        <li>💇‍♀️ Cuidar do cabelo e testar novos estilos</li>
+        <li>💄 Me maquiar para realçar ainda mais minha beleza</li>
+        <li>📸 Tirar fotos quando estou arrumada</li>
+        <li>🎶 Ouvir música </li>
+      </ul>
+    </div>
+
+    <!-- Como é bom ser meu amigo -->
+    <div id="amizade" class="tab-content hidden">
+      <h2>✨ Sobre ser minha amiga...</h2>
+      <p>
+        Ser minha amiga é uma experiência incrível, e eu falo isso com toda a certeza! Eu sou aquele tipo de pessoa que anima qualquer ambiente, que tá sempre pronta pra ouvir, dar risada, aconselhar e até dançar no meio da sala se for pra te ver feliz 💃💕
+      </p>
+      <p>
+        Sou bonita, divertida, sincera, carinhosa e muito leal. Gosto de ver quem eu amo bem, e faço questão de estar presente — seja pra conversar, rir ou até chorar junto, se precisar.
+      </p>
+      <p>
+        Minha amizade é leve, real e cheia de momentos bons. Quem é meu amigo(a), sabe que tem alguém de verdade pra contar. E se você ainda não é... já tá perdendo tempo! 😄💖
+      </p>
+    </div>
+
+    <!-- Beleza -->
+    <div id="beleza" class="tab-content hidden">
+      <h2>💄 Meu Jeito de Brilhar</h2>
+      <p>
+        Amo tudo que envolve se cuidar! 💖<br><br>
+        <strong>💅 Unhas:</strong> Cada semana uma cor nova, do rosa ao preto!<br>
+        <strong>💄 Maquiagem:</strong> Me divirto me maquiando e testando looks.<br>
+        <strong>💇‍♀️ Cabelo:</strong> Gosto de hidratar, e cuidar<br>
+      </p>
+      <p>✨
+        Eu sou linda do meu jeito único e especial <br> 
+        Pode contar comigo pra tudo, sempre estarei ao seu lado, pronta para apoiar, ajudar e fazer tudo ficar melhor.<br>
+        Sou aquela pessoa que ilumina o ambiente e nunca deixa ninguém na mão. 💖✨
+      </p>
+    </div>
+
+    <!-- Sobre ser meu parente -->
+    <div id="parente" class="tab-content hidden">
+      <h2>👑 Ser meu parente é um privilégio, viu? 😄</h2>
+      <p>
+        Vamos ser sinceros: ter alguém como eu na família é um presente daqueles que a vida dá e a gente guarda com carinho!
+      </p>
+      <p>
+        Eu sou aquela parente que alegra o ambiente, que fala alto quando empolga, que vive com uma piada na ponta da língua e um sorriso no rosto. Sou cheia de personalidade, autêntica, intensa, carinhosa e — vamos combinar — linda demais, por dentro e por fora! 💁‍♀️✨
+      </p>
+      <p>
+        Mas não é só sobre beleza e bom humor… Eu sou parceira de verdade, leal, presente, e sempre pronta pra ajudar, defender e cuidar de quem eu amo. Se sou da sua família, pode ter certeza: você nunca vai estar sozinho(a).
+      </p>
+      <p>
+        Ser meu parente é ter alguém animado nos almoços de domingo, alguém que dá conselho mesmo sem ninguém pedir (e geralmente tá certo 😅), alguém que ama estar perto da família — mesmo com todas as loucuras que a gente vive juntos.
+      </p>
+      <p>
+        Em resumo: sou tipo aquele tempero especial que deixa a família ainda mais gostosa de conviver. E se você faz parte da minha vida… pode se considerar sortudo(a)! 💞👨‍👩‍👧‍👦✨
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - Saskia maravilhosa💕</p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const allTabs = document.querySelectorAll('.tab-content');
+      allTabs.forEach(tab => tab.classList.add('hidden'));
+
+      const allButtons = document.querySelectorAll('.tab-button');
+      allButtons.forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabId).classList.remove('hidden');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
